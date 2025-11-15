@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.css';
+import maleUserImg from './assets/male.jpg';
+import femaleUserImg from './assets/female.jpg';
+import ProfileCard from './components/ProfileCard';
 function App() {
-  const [count, setCount] = useState(0)
 
+  let user1Details = { name: "Dhivakaran", city: "Pudukkottai", img: maleUserImg };
+  let user2Details = { name: "Joyal", city: "Trichy", img: maleUserImg };
+  let user3Details = { name: "Palani", city: "Thanjavur", img: maleUserImg };
+  let user4Details = { name: "Dhivya", city: "Cuddalore", img: femaleUserImg };
+  let user5Details = { name: "Dharani", city: "Dindigul", img: femaleUserImg };
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <nav className="navbar bg-body-tertiary">
+        <div className="container-fluid">
+          <span className="navbar-brand mb-0 h1">Profile Card</span>
+        </div>
+      </nav>
+      <div className="container my-5">
+        <div className="row justify-content-center g-3">
+          <div className="col-md-3">
+            <ProfileCard props={user1Details} />
+          </div>
+          <div className="col-md-3">
+            <ProfileCard props={user2Details} />
+          </div>
+          <div className="col-md-3">
+            <ProfileCard props={user3Details} />
+          </div>
+          <div className="col-md-3">
+            <ProfileCard props={user4Details} />
+          </div>
+          <div className="col-md-3">
+            <ProfileCard props={user5Details} />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
