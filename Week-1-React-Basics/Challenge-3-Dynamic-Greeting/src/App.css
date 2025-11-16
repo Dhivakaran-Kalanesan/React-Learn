@@ -1,0 +1,25 @@
+.bg-theme{
+  background-color: #AFD5E0;
+  display: grid;
+  place-items: center;
+}
+.greetings-card{
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.input-wrapper{
+  background-color: #87C440;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 40px;
+}
+input{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  box-shadow: none;
+}

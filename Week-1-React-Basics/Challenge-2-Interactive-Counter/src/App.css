@@ -1,0 +1,54 @@
+.bg-theme{
+  background-color: #6A70FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar{
+  background-color: #868CFE;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 100px;
+}
+.circle{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  color: #6566F2;
+  display: grid;
+  place-items: center;
+}
+.circle h1{
+  font-size: 50px;
+}
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 80px;
+}
+.btn-action{
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 50px;
+}
+.btn-reset{
+  background-color: rgb(87, 10, 10);
+  margin: 10px 0;
+  border-radius: 20px;
+  padding: 10px 25px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn-mass{
+  background-color: rgb(87, 10, 10);
+  height: 50px;
+  width: 30px;
+  margin: 0 0 10px 0;
+  border: none;
+  border-radius: 50% 50% 0 0;
+}
